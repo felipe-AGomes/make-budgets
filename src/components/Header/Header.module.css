@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	padding: 0 10px;
+	width: calc(100% + 20px);
+	height: 30px;
+	margin: 0 -10px;
+	background: var(--blue);
+}
+
+.header > p {
+	color: var(--yellow);
+	font-weight: 400;
+}
