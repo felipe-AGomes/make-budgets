@@ -1,0 +1,92 @@
+.dropBox {
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+}
+
+.dropBox > p {
+	font-size: 0.75rem;
+}
+
+.material {
+	margin-top: 10px;
+}
+
+.selectContain {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.selectInput {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: var(--border-radius);
+	border: solid 1px var(--font-gray);
+	height: 20px;
+	font-size: 0.75rem;
+	text-align: center;
+	flex-grow: 1;
+	background: #fff;
+}
+
+.optionButtonContain {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 20px;
+	height: 20px;
+	border-radius: var(--border-radius);
+	border: solid 1px var(--font-gray);
+	cursor: pointer;
+	background: #fff;
+}
+
+.optionButtonTop {
+	transform: rotate(180deg);
+	transition: 0.2s linear;
+}
+
+.optionButtonDown {
+	transform: rotate(0);
+	transition: 0.2s linear;
+}
+
+.options {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 5px;
+
+	position: absolute;
+	top: 30px;
+	font-size: 0.75rem;
+	width: 100%;
+	background: #fff;
+	border: solid 1px var(--font-gray);
+	border-radius: var(--border-radius);
+	margin-top: 10px;
+	z-index: 1;
+}
+
+.options > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+	width: 100%;
+}
+
+.options > div:hover {
+	background: #3282cd;
+}
+
+.options > div:hover > p {
+	color: var(--yellow);
+}
