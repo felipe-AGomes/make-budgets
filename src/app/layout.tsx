@@ -1,3 +1,4 @@
+import MaterialContextProvider from '@/context/Material';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
@@ -19,7 +20,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='pt-br'>
-			<body className={roboto.className}>{children}</body>
+			<MaterialContextProvider>
+				<body className={roboto.className}>{children}</body>
+			</MaterialContextProvider>
 		</html>
 	);
 }
