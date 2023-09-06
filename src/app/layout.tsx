@@ -1,3 +1,4 @@
+'use client';
 import MaterialContextProvider from '@/context/Material';
 import './globals.css';
 import type { Metadata } from 'next';

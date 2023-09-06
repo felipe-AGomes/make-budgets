@@ -1,4 +1,5 @@
 type MaterialData = {
+	id: string;
 	name: string;
 	unit: string;
 	priceIn: string;
@@ -6,6 +7,7 @@ type MaterialData = {
 };
 
 type WorkData = {
+	id: string;
 	name: string;
 	unit: string[];
 };
